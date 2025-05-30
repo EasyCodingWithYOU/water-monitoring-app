@@ -53,7 +53,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "Welcome Back 👋",
+                        "Welcome ",
                         style: GoogleFonts.poppins(
                           fontSize: 28.sp,
                           fontWeight: FontWeight.bold,
