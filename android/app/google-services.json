@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "340489200051",
+    "firebase_url": "https://my-water-flow-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "my-water-flow-app",
+    "storage_bucket": "my-water-flow-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340489200051:android:a0aec93a9449e8589eebc6",
+        "android_client_info": {
+          "package_name": "com.example.new_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340489200051-7nsfdeg58uruk6i08tisrhvgpfj8i9jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOtU2agUyoemdjCG5ST06iuFKSIWNeqAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340489200051-7nsfdeg58uruk6i08tisrhvgpfj8i9jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "340489200051-cirk33a3du3u5uaoaiptljloct3vcbea.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.waterFollow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340489200051:android:86d7138a7494b8639eebc6",
+        "android_client_info": {
+          "package_name": "com.example.water_follow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340489200051-dc7gdkd8vpdhb9ca2rrj7n12688mktbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.water_follow",
+            "certificate_hash": "0de3158201abe7313fb01c0371a5e5b611855635"
+          }
+        },
+        {
+          "client_id": "340489200051-7nsfdeg58uruk6i08tisrhvgpfj8i9jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOtU2agUyoemdjCG5ST06iuFKSIWNeqAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340489200051-7nsfdeg58uruk6i08tisrhvgpfj8i9jj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "340489200051-cirk33a3du3u5uaoaiptljloct3vcbea.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.waterFollow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
