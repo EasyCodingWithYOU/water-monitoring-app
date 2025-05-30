@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:new_pro/screens/Auth/AuthRepository/Auth_Repository.dart';
 import 'auth_event.dart';
@@ -16,12 +17,12 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     Emitter<AuthState> emit,
   ) async {
     emit(AuthLoading());
+    final user;
     try {
-      final user = await authRepository.signInWithEmail(
-        event.email,
-        event.password,
+      user = await authRepository.signInWithEmail(event.email, event.password);
+      emit(
+        user != null ? AuthSuccess(user) : AuthFailure("Invalid credentials"),
       );
-      emit(user != null ? AuthSuccess() : AuthFailure("Invalid credentials"));
     } catch (e) {
       emit(AuthFailure("Sign in failed: ${e.toString()}"));
     }
@@ -34,7 +35,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     emit(AuthLoading());
     try {
       final user = await authRepository.signInWithGoogle();
-      emit(user != null ? AuthSuccess() : AuthFailure("Google sign-in failed"));
+      emit(
+        user != null ? AuthSuccess(user) : AuthFailure("Google sign-in failed"),
+      );
     } catch (e) {
       emit(AuthFailure("Google sign-in failed: ${e.toString()}"));
     }

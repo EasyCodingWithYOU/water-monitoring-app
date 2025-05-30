@@ -11,7 +11,7 @@ class AuthRepository {
       email: email,
       password: password,
     );
-
+    await _saveUserData(result.user);
     return result.user;
   }
 
@@ -26,7 +26,7 @@ class AuthRepository {
     );
 
     final result = await _auth.signInWithCredential(credential);
-
+    await _saveUserData(result.user);
     return result.user;
   }
 
